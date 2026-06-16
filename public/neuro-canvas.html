@@ -670,7 +670,7 @@ async function expandNode(nodeId, x, y, content) {
 
 // ─── CORE NODE ────────────────────────────────────────────────────────────────
 createNode({ id: 0, x: 0, y: 0, type: 'core', content: 'GROQ\nCORE', badge: '◈ IA CENTRALE', parentId: null });
-
+  
 // ─── HUD ─────────────────────────────────────────────────────────────────────
 function updateHUD() {
   document.getElementById('node-count').textContent = `NODES: ${state.nodes.length}`;
