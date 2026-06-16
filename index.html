@@ -560,7 +560,7 @@ async function askClaude(prompt, context) {
     ? `Tu es une IA intégrée dans un mind-map cyberpunk infini. Réponds de façon concise et percutante (2-4 phrases max, ou du code). Contexte du nœud parent: "${context}". Réponds à la question/idée de l'utilisateur.`
     : `Tu es une IA intégrée dans un mind-map cyberpunk infini. Réponds de façon concise et percutante (2-4 phrases max, ou du code propre). Détecte si c'est une demande de code et réponds avec du code dans ce cas.`;
 
-  const response = await fetch('https://api.anthropic.com/v1/messages', {
+  const response = await fetch('/api/claude', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
