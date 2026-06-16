@@ -685,12 +685,12 @@ document.querySelectorAll('.chip').forEach(chip => {
     document.getElementById('active-mode-label').textContent = chip.textContent.trim();
 
     const input = document.getElementById('main-input');
-    const placeholders = {
-      ask:  'pose une question à Claude...',
-      text: 'écris une note libre...',
-      code: 'colle ou décris du code...',
-      idea: 'une idée, un concept...',
-    };
+   const placeholders = {
+  ask: 'pose une question à Groq...',
+  text: 'écris une note libre...',
+  code: 'colle ou décris du code...',
+  idea: 'une idée, un concept...',
+};
     input.placeholder = placeholders[state.mode] || '';
   });
 });
