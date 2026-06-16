@@ -1,11 +1,15 @@
 'use client';
 
-import { useEffect } from 'react';
-
 export default function NeuroCanvas() {
-  useEffect(() => {
-    window.location.href = '/neuro-canvas.html';
-  }, []);
-
-  return <div style={{color: '#00ffe5', padding: '50px'}}>Chargement de NEURO//CANVAS...</div>;
+  return (
+    <iframe 
+      src="/neuro-canvas.html" 
+      style={{ 
+        width: '100vw', 
+        height: '100vh', 
+        border: 'none' 
+      }}
+      title="NEURO//CANVAS"
+    />
+  );
 }
